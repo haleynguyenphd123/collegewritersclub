@@ -44,10 +44,14 @@
             font-size: 1.5rem;
             line-height: 1.6;
             margin: 0.5rem 0;
-            background: linear-gradient(90deg, #ff9a8b, #ff6bcb);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            color: #fff; /* Solid white text */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Kept shadow for readability */
+        }
+
+        /* Ensure emojis render normally without gradient */
+        p span.emoji {
+            font-style: normal; /* Prevent italic styling */
+            color: inherit; /* Use default emoji colors */
         }
 
         i {
@@ -94,13 +98,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>College Writers Club 🎉</h1>
-        <p>⭐️ Rare links from rare US college students ⭐️</p>
-        <p>🌿 Ivy-league backlinks 🌿</p>
-        <p>🏛️ Domain Authority (DA) is DA88 to DA91 🏛️</p>
-        <p>👩🏻‍🎓 Me + my grads write your article (NO GPT) 👩🏻‍🎓</p>
+        <h1>College Writers Club</h1>
+        <p><span class="emoji">⭐️</span> Rare links from US college students <span class="emoji">⭐️</span></p>
+        <p><span class="emoji">🌿</span> Ivy-league backlinks <span class="emoji">🌿</span></p>
+        <p><span class="emoji">🏛️</span> Domain Authority (DA) is DA88 to DA91 <span class="emoji">🏛️</span></p>
+        <p><span class="emoji">👩🏻‍🎓</span> Written by me + grads (NO GPT) <span class="emoji">👩🏻‍🎓</span></p>
         <i>— Haley and team 💖</i>
         <i><a href="mailto:haley@collegewritersclub.com" style="color: inherit; text-decoration: none;">haley@collegewritersclub.com</a></i>
+        <br/>
+        Email me for a live sample article and pricing per article.
     </div>
 </body>
 </html>
